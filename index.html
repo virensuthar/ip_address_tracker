@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="./css/style.css" />
+
+      <!-- leaflet css -->
+      <link
+         rel="stylesheet"
+         href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+         integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+         crossorigin=""
+      />
+
+      <!-- leaflet js -->
+      <script
+         src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+         integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+         crossorigin=""
+      ></script>
+
+      <!-- font awesome -->
+      <link
+         rel="stylesheet"
+         href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+         integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+         crossorigin="anonymous"
+      />
+
+      <title>IP Tracker</title>
+   </head>
+   <body>
+      <header id="top_heading">
+         <h1>IP Address Tracker</h1>
+         <form class="search_form">
+            <input
+               type="text"
+               id="ip_input"
+               name="ip_input"
+               placeholder="Search for any IP address or domain"
+            />
+            <button type="submit" class="btn">
+               <i class="fa fa-search" aria-hidden="true"></i>
+            </button>
+         </form>
+      </header>
+
+      <div class="info_bar">
+         <div class="info_card">
+            <h5 class="info_head">ip address</h5>
+            <h3 class="info_body ip">8.8.8.8</h3>
+         </div>
+         <div class="info_card">
+            <h5 class="info_head">location</h5>
+            <h3 class="info_body location">Brooklyn, NY 1001</h3>
+         </div>
+         <div class="info_card">
+            <h5 class="info_head">timezone</h5>
+            <h3 class="info_body timezone">UIC -5:00</h3>
+         </div>
+         <div class="info_card">
+            <h5 class="info_head">isp</h5>
+            <h3 class="info_body isp">SpaceX starlink</h3>
+         </div>
+      </div>
+      <div id="mapid"></div>
+      <script src="./app.js"></script>
+   </body>
+</html>
